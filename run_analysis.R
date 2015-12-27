@@ -108,4 +108,4 @@ final_tidy$SubjectID <- as.factor(final_tidy$SubjectID)
 finished_data <- summarize_each(final_tidy, funs(mean))
 
 # Write the final data set to a file and export it
-write.table(finished_data, './finished_data.txt', row.names=TRUE, sep='\t')
+write.table(finished_data, './finished_data.txt', row.names = FALSE, sep='\t')
